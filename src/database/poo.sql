@@ -14,6 +14,8 @@ CREATE TABLE accounts (
     balance REAL DEFAULT (0) NOT NULL,
     created_at TEXT DEFAULT (DATETIME()) NOT NULL,
     FOREIGN KEY (owner_id) REFERENCES users (id)
+	ON UPDATE CASCADE
+	ON DELETE CASCADE
 );
 
 INSERT INTO users (id, name, email, password)
