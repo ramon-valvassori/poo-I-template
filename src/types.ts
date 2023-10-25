@@ -1,13 +1,12 @@
-export type TUserDB = {
+export type TVideosDB = {
     id: string,
-    name: string,
-    email: string,
-    password: string,
-    created_at: string
+    title: string,
+    duration: number,
+    upload_date: string
 }
 
 // tipagem para criação (POST) sem created_at
-export type TUserDBPost = {
+/* export type TUserDBPost = {
     id: string,
     name: string,
     email: string,
@@ -26,3 +25,4 @@ export type TAccountDBPost = {
     id: string,
     owner_id: string
 }
+ */
